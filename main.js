@@ -4,11 +4,12 @@ const addBtn = document.querySelectorAll(".soldItem button");
 const soldItem = document.querySelectorAll(".soldItem img");
 
 
-let count = 1;
-
 addBtn.forEach((e) => {
+  
+    let count = 1;
 
   e.addEventListener("click", () => {
+
 
     e.innerHTML = ""
 
