@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  padding: 0;
+}
+
+.productContainer {
+  width: 60%;
+  margin: 50px auto;
+  height: 70vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 30px;
+}
+
+.product-left {
+  flex: 1;
+  border: 1px solid green;
+  position: relative;
+}
+
+.product-right {
+  flex: 1;
+
+}
+
+.product-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.product-nav a {
+  color: #111;
+  ;
+  font-weight: 400;
+  font-size: 0.7rem;
+}
+
+.productDesc {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  margin-top: 50px;
+  padding: 20px;
+}
+
+.productDesc h1 {
+  font-size: 1.5rem;
+  color: #111;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.productDesc h1:hover {
+  color: green;
+}
+
+.skuInfo {
+  margin-top: 20px;
+  display: flex;
+  margin-right: 30px;
+  width: 70%;
+  font-size: 0.7rem;
+  cursor: pointer;
+}
+
+.skuInfo p {
+  margin-left: 20px;
+}
+
+.priceTag {
+  margin-top: 12px;
+  width: 70%;
+  display: flex;
+  align-items: center;
+}
+
+.priceTag span {
+  margin-left: 20px;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: green;
+}
+
+.priceTag span:first-child {
+  text-decoration: line-through;
+  color: red;
+}
+
+.productInfo {
+  font-size: 0.8rem;
+  color: gray;
+  font-weight: 400;
+  margin: 20px;
+}
+
+.tags {
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.tags ul li {
+  padding: 5px;
+  list-style: none;
+  display: inline-block;
+  margin-left: 30px;
+  font-size: 0.8rem;
+  background: rgba(235, 213, 213, 0.397);
+  border-radius: 3px;
+}
+
+.tags ul li:hover {
+  background-color: green;
+}
+
+.tags ul li:hover a {
+  color: white;
+}
+
+.addcart {
+  margin: 20px;
+  background-color: green;
+  font-size: 1rem;
+  color: white;
+  padding: 7px 15px;
+  cursor: pointer;
+}

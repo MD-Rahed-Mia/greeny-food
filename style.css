@@ -1,0 +1,586 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap');
+
+
+:root {
+  --primary-color: green;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #111;
+}
+
+.header {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: var(--primary-color);
+}
+
+.headingText {
+  font-size: 0.7rem;
+  color: white;
+  font-weight: 400;
+}
+
+.header-tools {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.language {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+}
+
+.language i {
+  font-size: 0.7rem;
+  color: white;
+}
+
+.lang-list select {
+  padding: 7px;
+  display: block;
+  background: transparent;
+  outline: none;
+  border: none;
+}
+
+.lang-list select option {
+  color: #111;
+}
+
+.lang-list select:first-child {
+  color: white;
+}
+
+.currency {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.currency i {
+  font-size: 0.7rem;
+  color: white;
+}
+
+.curr-list select {
+  padding: 7px;
+  display: block;
+  background: transparent;
+  outline: none;
+  border: none;
+}
+
+.curr-list select option {
+  color: #111;
+}
+
+.curr-list select:first-child {
+  color: white;
+}
+
+.tooltipBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 15px;
+}
+
+.tooltipBar a {
+  font-size: 0.7rem;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* navbar starts from here */
+
+.navBar {
+  width: 70%;
+  height: 60px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navBar .logo {
+  width: 100px;
+  cursor: pointer;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.userIcon {
+  height: 30px;
+  width: 30px;
+}
+
+.user a {
+  font-size: 0.8rem;
+  text-decoration: none;
+  color: #111;
+}
+
+.search {
+  width: 500px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(221, 216, 216, 0.712);
+  border-radius: 10px;
+}
+
+.search input {
+  width: 80%;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  height: 100%;
+}
+
+.searchIcon {
+  font-size: 1rem;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.shoppingIcon {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.shoppingIcon div {
+  padding: 7px;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  color: #111;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.shoppingIcon div span {
+  position: absolute;
+  top: -20%;
+  right: 10%;
+  font-size: 0.6rem;
+  background-color: var(--primary-color);
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.shoppingIcon div:hover {
+  background-color: var(--primary-color);
+}
+
+.costing {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.costing a:hover {
+  color: var(--primary-color);
+}
+
+/* category starts from here */
+
+.catergory {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.categoryLeft .categoryList {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+  font-size: 0.8rem;
+}
+
+.categoryTool {
+  position: relative;
+  cursor: pointer;
+}
+
+.categoryToolList {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  min-width: 150px;
+  padding: 5px;
+  background-color: white;
+  box-shadow: 2px 2px 5px rgba(221, 216, 216, 0.712);
+  display: none;
+}
+
+.categoryToolList ul li {
+  list-style-type: none;
+  padding: 5px;
+  color: #111;
+}
+
+.categoryTool:hover .categoryToolList {
+  display: block;
+}
+
+/* image slider starts from here */
+
+.imageSlider {
+  margin-top: 30px;
+  width: 100vw;
+  height: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, lightgrey, seagreen);
+}
+
+.sliderImg {
+  width: 200px;
+  height: 200px;
+}
+
+.sliderDesc {
+  padding: 50px;
+}
+
+.sliderDesc h1 {
+  font-size: 2.3rem;
+  color: #111;
+}
+
+.sliderDesc p {
+  font-size: 1rem;
+  color: #111111a2;
+  margin: 15px 0;
+  font-weight: 500;
+}
+
+.primaryBtn {
+  padding: 8px 20px;
+  border: 1px solid var(--primary-color);
+  margin-right: 10px;
+  margin-top: 15px;
+  border-radius: 4px;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.sliderDesc button i {
+  padding: 5px;
+  font-size: 1rem;
+}
+
+.sliderDesc button:nth-child(1) {
+  background-color: var(--primary-color);
+  color: white;
+  font-weight: 700;
+}
+
+.sliderDesc button:nth-child(2) {
+  color: var(--primary-color);
+  background-color: white;
+  font-weight: 700;
+  border-color: var(--primary-color);
+}
+
+button:nth-child(1):hover {
+  color: var(--primary-color);
+  background-color: white;
+  font-weight: 700;
+  border-color: var(--primary-color);
+}
+
+button:nth-child(2):hover {
+  background-color: var(--primary-color);
+  color: white;
+  font-weight: 700;
+}
+
+/* small slider starts from here */
+
+.smSlider {
+  width: 77%;
+  margin: 50px auto;
+  display: flex;
+  gap: 20px;
+  overflow: hidden;
+
+}
+
+.smSliderItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 220px;
+  height: 150px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.smSliderItem span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.smSliderItem img {
+  width: 220px;
+  height: 150px;
+  filter: brightness(0.5);
+  border-radius: 5px;
+}
+
+.smSlider:hover {
+  animation: anim 5s linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes anim {
+  0% {
+    transform: translateX(-100px);
+  }
+
+  50% {
+    transform: translateX(-200px);
+  }
+
+  100% {
+    transform: translateX(-400px);
+  }
+}
+
+
+@media screen and (max-width: 500px) {
+  .header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+    padding: 10px;
+  }
+
+  .navBar {
+    min-height: fit-content;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .search {
+    width: 200px;
+  }
+
+  .catergory {
+    display: none;
+  }
+
+
+  .imageSlider {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30vh;
+  }
+
+  .imageSlider img {
+    height: 150px;
+    width: 150px;
+  }
+
+  .smSlider {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+/* recently solds starts here */
+
+.recentSold {
+  width: 60%;
+  margin: 50px auto;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  grid-gap: 15px;
+}
+
+.soldHeading {
+  text-align: center;
+}
+
+.soldItem {
+  box-shadow: 5px 5px 15px rgba(221, 216, 216, 0.952);
+  min-height: 250px;
+  width: 180px;
+  text-align: center;
+  margin-top: 20px;
+  border-radius: 7px;
+  position: relative;
+}
+
+.sold {
+  z-index: 88;
+}
+
+.soldItem img {
+  width: 120px;
+  height: 120px;
+}
+
+.soldItemDesc {
+  margin: 10px auto;
+}
+
+.soldItemDesc p {
+  font-size: 0.7rem;
+  color: #111;
+}
+
+.soldItemDesc p:nth-child(1) {
+  font-size: 1rem;
+}
+
+
+.soldItemDesc:nth-child(2) span:nth-child(1) {
+  text-decoration: line-through;
+  color: orangered;
+  margin-right: 5px;
+}
+
+.soldItemDesc:nth-child(2) span:nth-child(2) {
+  text-decoration: line-through;
+  color: var(--primary-color);
+  margin-right: 5px;
+  font-weight: 800;
+}
+
+.soldBtn {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  font-size: 0.9rem;
+  color: white;
+  background-color: gray;
+  outline: none;
+  border: none;
+  padding: 10px 10px;
+  cursor: pointer;
+  z-index: 5;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+}
+
+.soldItem:hover {
+  border: 1px solid var(--primary-color);
+}
+
+.soldItem button:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+
+
+.soldItem:hover .soldBtn {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: rgba(206, 200, 200, 0.089);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+  text-align: center;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.overlay i {
+  display: inline-block;
+  font-size: 1rem;
+  color: white;
+  background-color: var(--primary-color);
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+.soldItem:hover .overlay {
+  display: flex;
+}
+
+.showMore {
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.showMore button:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.addBtn {
+  font-size: 1rem;
+  background-color: transparent;
+  width: 30px;
+  outline: none;
+  border: none;
+  color: white;
+}
